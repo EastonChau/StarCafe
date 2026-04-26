@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarCafé Operating System</title>
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+
+
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div id="loading-indic" class="loading-card" style="text-align: center; padding: 50px;">
+        <p style="color: #FFFFFF;">Loading ...</p>
+    </div>
+
+    <div id="welcome-card" class="modal-overlay" style="display:none;">
+        <div class="modal-content">
+            <span id="close-welcome" class="welcome-close-btn">&times;</span>
+            <h2>🎉 Welcome!</h2>
+            <p>Thank you for becoming a member—<b>$1,000</b> has been added to your balance.</p>
+        </div>
+    </div>
+    
+    <button id="open-sidebar-btn" class="menu-icon-btn" style="display:none;">☰</button>
+    
+    <div class="card" id="main-card" style="display:none;">
+        <div id="auth-card">
+
+            <img src="logoAni.gif" alt="Logo" class="logo">
+
+
+            <div id="login-form">
+                <input type="text" id="name" placeholder="Account Name">
+                <input type="password" id="login-password" placeholder="Password">
+                <button id="login-btn">Login</button>
+                <p class="toggle-text">
+                    Don't have an account? <span id="link-to-signup" style="color: blue; cursor: pointer;">Sign up</span>
+                </p>        
+            </div>
+
+            <div id="signup-form" style="display:none;">
+                <input type="text" id="signup-name" placeholder="Account Name">
+                <input type="password" id="signup-password" placeholder="Password">
+                <button id="signup-btn">Create Account</button>
+                <p class="toggle-text">
+                    Already have an account? <span id="link-to-login" style="color: blue; cursor: pointer;">Sign in</span>
+                </p>
+            </div>
+            <div id="hint" class="message"></div>
+        </div>
+
+
+
+        <div id="dashboard-section" style="display:none;"> 
+
+            <h2 id="menu-title" class="title">Welcome</h2>    
+            <hr>
+            <h3>Menu</h3>
+            <div id="food-list" class="food-container"></div>
+            
+        </div>
+
+
+
+        <div id="cart-container" style="display:none;">
+            <h2 id="cart-name" class="title">Cart</h2>
+            <hr>  
+
+            <div id="cart-food-container" class="food-container"></div>
+            
+            <div id="cart-summary" style="margin-top: 20px; padding: 15px; border-top: 2px solid #eee;">
+                <p id="combo-discount-text" style="color: #e67e22; font-weight: bold;"></p>
+                <h3 id="total-price-display">Total: $0</h3>
+                <button id="purchase-btn" class="button">Purchase</button>
+            </div>
+        </div>
+
+        <div id="contact-card" style="display:none;"> 
+            <input type="tel" id="contact-input" placeholder="Contact Number">
+            <div id="contact-message" class="message"></div>
+            <button id="contact-btn" class="button">Submit</button>
+        </div>
+
+
+        <div id="profile-card" style="display:none;"> 
+            <h2 id="profile-head">Welcome</h2>
+            <hr>
+            <h3>Order History</h3>
+            <div id="order-list" class="order-container"></div>
+            
+        </div>
+
+
+
+
+
+
+
+        
+
+    </div>
+
+
+
+
+    <div id="sidebar" class="sidebar">
+        <span id="close-sidebar" class="close-sidebar-btn">&times;</span>
+        <div class="sidebar-links">
+            <button class="side-btn" id = "profile-btn">Profile</button>
+            <button class="side-btn" id = "menu-btn">Menu</button>
+            <button class="side-btn" id = "cart-btn">Cart</button>
+            <button class="side-btn" id = "logout-btn">Sign out</button>
+        </div>
+    </div>
+
+    <div id="loading-card" class="loading-card" style="display:none;">
+        <div class="loader"><p style="color: #FFFFFF;">Loading ...</p></div>
+    </div>
+ 
+    
+
+
+    <script type="py" src="main.py"></script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
