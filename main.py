@@ -1,6 +1,6 @@
 #   Student name: Chau Yat Tung
-#   Student ID: 3036327923
-#   Course code and assignment title
+#  
+#   
 from pyscript import when, fetch, document, window
 import json
 from datetime import datetime
