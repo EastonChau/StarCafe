@@ -1,4 +1,4 @@
-# StarCafé Website <img src="logoAni.gif" width="55" alt="logo GIF"> 
+# <img src="logoAni.gif" width="55" alt="logo GIF"> StarCafé Website 
 
 A sample cafe web application built with HTML, CSS, and **PyScript** for frontend logic, powered by **Firebase** for backend data storage.
 
