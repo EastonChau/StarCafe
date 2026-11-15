@@ -15,7 +15,7 @@ A sample cafe web application built with HTML, CSS, and **PyScript** for fronten
 
 * **HTML5 & CSS3:** Page structure and styling.
 * **PyScript:** Runs Python directly in the browser to handle UI logic and database requests.
-* **Firebase:** Backend database for storing and retrieving cafe data using REST APIs (e.g., menu items, orders, or reservations).
+* **Firebase:** Backend database for storing and retrieving cafe data using **REST APIs** (e.g., menu items, orders, or reservations).
 
 ## 🚀 Getting Started
 
