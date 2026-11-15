@@ -1,6 +1,6 @@
 # ☕ Sample Cafe Website
 
-![Cafe Logo](logoAni.gif)
+<img src="logoAni.gif" width="50" alt="logo GIF">
 
 A sample cafe web application built with HTML, CSS, and **PyScript** for frontend logic, powered by **Firebase** for backend data storage.
 
