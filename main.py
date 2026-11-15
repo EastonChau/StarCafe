@@ -8,7 +8,7 @@ from datetime import datetime
 
 
 # base URL using firebase
-BASE_URL = "https://group-project-355f4-default-rtdb.asia-southeast1.firebasedatabase.app/user"
+BASE_URL = ""
 
 cart = {}
 
